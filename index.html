@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wu Yuchen | Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== TOP NAVIGATION ==================== -->
+<nav class="top-nav" id="topNav">
+    <a href="#" class="nav-logo" data-page="home" aria-label="Wu Yuchen Home">
+        <span class="logo-dot"></span> YUCHEN
+    </a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#" data-page="home" data-en="Home" data-zh="主页">Home</a></li>
+        <li><a href="#" data-page="education" data-en="Education" data-zh="教育学习">Education</a></li>
+        <li><a href="#" data-page="hobbies" data-en="Hobbies" data-zh="兴趣爱好">Hobbies</a></li>
+        <li><a href="#" data-page="travel" data-en="Travel" data-zh="旅行生活">Travel</a></li>
+        <li><a href="#" data-page="family" data-en="Family & Friends" data-zh="家人挚友">Family & Friends</a></li>
+        <li><a href="#" data-page="contact" data-en="Contact" data-zh="与我联系">Contact</a></li>
+    </ul>
+    <button class="lang-toggle desktop-only" id="langToggleDesktop" aria-label="Switch language">中文</button>
+    <a href="#" class="nav-cta desktop-only" data-page="contact" data-en="GET IN TOUCH" data-zh="联系我">GET IN TOUCH</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- Mobile nav panel -->
+<div class="mobile-nav-panel" id="mobileNavPanel">
+    <a href="#" data-page="home" data-en="Home" data-zh="主页">Home</a>
+    <a href="#" data-page="education" data-en="Education" data-zh="教育学习">Education</a>
+    <a href="#" data-page="hobbies" data-en="Hobbies" data-zh="兴趣爱好">Hobbies</a>
+    <a href="#" data-page="travel" data-en="Travel" data-zh="旅行生活">Travel</a>
+    <a href="#" data-page="family" data-en="Family & Friends" data-zh="家人挚友">Family & Friends</a>
+    <a href="#" data-page="contact" data-en="Contact" data-zh="与我联系">Contact</a>
+    <a href="#" class="nav-cta" data-page="contact" data-en="GET IN TOUCH" data-zh="联系我">GET IN TOUCH</a>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">中文</button>
+</div>
+
+<!-- ==================== HOME PAGE ==================== -->
+<section class="page-section active" id="page-home">
+    <!-- Corner decorations -->
+    <div class="home-corner home-corner--tl"></div>
+    <div class="home-corner home-corner--tr"></div>
+    <div class="home-corner home-corner--bl"></div>
+    <div class="home-corner home-corner--br"></div>
+
+    <!-- First screen: hero -->
+    <div class="hero-nb">
+        <div class="hero-nb__left">
+            <div class="hero-text-box">
+                <span class="tag" data-en="SOFTWARE ENGINEER · ORIENTEER" data-zh="软件工程师 · 定向越野运动员">SOFTWARE ENGINEER · ORIENTEER</span>
+                <h1>
+                    <span data-en="Code the Map," data-zh="用代码读懂地图，">Code the Map,</span><br>
+                    <span class="accent-word" data-en="Run the Course." data-zh="用脚步丈量赛道。">Run the Course.</span>
+                </h1>
+                <p class="subtitle"
+                    data-en="I'm Wu Yuchen — a Software Engineering student at Macau University of Science and Technology and a national-level orienteering athlete. Born in Yunnan, hometown in Guangxi. I treat life like a orienteering race: read the contours, laugh when lost, and push through to the finish."
+                    data-zh="我是吴宇晨——澳门科技大学软件工程专业学生，国家二级定向越野运动员。生源地云南，家乡广西。我把人生跑成一场又一场定向越野：读得懂等高线，笑得出迷路时，也扛得住最后那一程。">
+                    I'm Wu Yuchen — a Software Engineering student at Macau University of Science and Technology and a national-level orienteering athlete. Born in Yunnan, hometown in Guangxi.
+                </p>
+                <div class="info-tags">
+                    <span class="info-tag info-tag--accent" data-en="Birthplace: Yunnan" data-zh="生源地：云南">Birthplace: Yunnan</span>
+                    <span class="info-tag" data-en="Hometown: Guangxi" data-zh="家乡：广西">Hometown: Guangxi</span>
+                    <span class="info-tag" data-en="M.U.S.T. · Macau" data-zh="澳门科技大学 · 澳门">M.U.S.T. · Macau</span>
+                </div>
+                <div class="btn-row">
+                    <a href="#" class="btn-nb btn-nb--accent" data-page="contact" data-en="GET IN TOUCH" data-zh="联系我">GET IN TOUCH</a>
+                    <a href="https://github.com/SHENQUE520" target="_blank" rel="noopener" class="btn-nb" data-en="GITHUB" data-zh="GITHUB">GITHUB</a>
+                </div>
+            </div>
+            <!-- S-curve line + text, below the text box in left column -->
+            <div class="home-scroll-section">
+                <div class="home-scurve-wrap">
+                    <svg class="home-scurve-svg" viewBox="0 0 120 750" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <path d="M 60,0 C 110,80 10,170 60,250 C 110,330 10,420 60,500 C 110,580 10,670 60,750"
+                            fill="none" stroke="#FF90E8" stroke-width="4" stroke-linecap="round"
+                            filter="url(#sCurveShadow)"/>
+                        <defs>
+                            <filter id="sCurveShadow" x="-50%" y="-10%" width="200%" height="120%">
+                                <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.7"/>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <div class="home-scurve-text">
+                        <span class="spiral-text-zh">按图索骥，终抵繁星</span>
+                        <span class="spiral-text-en">Follow the map, reach the stars.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-nb__right">
+            <div class="pinboard" id="homePinboard">
+                <div class="pin-photo" style="--r:-3deg"><img src="images/photo1.jpg" alt="Photo 1"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:2deg"><img src="images/photo2.jpg" alt="Photo 2"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:-2deg"><img src="images/photo7.jpg" alt="Photo 3"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:4deg"><img src="images/photo8.jpg" alt="Photo 4"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:-1deg"><img src="images/photo9.jpg" alt="Photo 5"><div class="pin-dot"></div></div>
+                <div class="pin-photo pin-photo--landscape" style="--r:3deg"><img src="images/photo10.jpg" alt="Photo 6"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:-4deg"><img src="images/photo11.jpg" alt="Photo 7"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:2deg"><img src="images/photo12.jpg" alt="Photo 8"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:-2deg"><img src="images/photo13.jpg" alt="Photo 9"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:3deg"><img src="images/photo14.jpg" alt="Photo 10"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:-3deg"><img src="images/photo15.jpg" alt="Photo 11"><div class="pin-dot"></div></div>
+                <div class="pin-photo" style="--r:1deg"><img src="images/photo18.jpg" alt="Photo 12"><div class="pin-dot"></div></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ==================== EDUCATION PAGE ==================== -->
+<section class="page-section" id="page-education">
+    <div class="section-nb">
+        <h2 class="section-nb__title" data-en="Education & Experience" data-zh="教育学习">Education & Experience</h2>
+        <div class="section-nb__divider"></div>
+        <a href="https://github.com/SHENQUE520" target="_blank" rel="noopener" class="github-link-row">
+            <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            <span>github.com/SHENQUE520</span>
+        </a>
+
+        <!-- 校园学习 -->
+        <h3 class="subsection-title" data-en="Campus Learning" data-zh="校园学习">Campus Learning</h3>
+        <div class="card-grid">
+            <div class="card-nb">
+                <div class="card-tag" data-en="Undergraduate" data-zh="本科">Undergraduate</div>
+                <h3 data-en="M.U.S.T. — Software Engineering" data-zh="澳门科技大学 — 软件工程">M.U.S.T. — Software Engineering</h3>
+                <p class="card-date">2023.09 – 2028.06 </p>
+                <p data-en="Core courses: Web Technologies (CSS/HTML5), Algorithm Design & Analysis, Database Systems (SQL), Machine Learning. All courses taught in English. Successfully transferred from International Tourism Management with high GPA."
+                   data-zh="核心课程：WEB技术（CSS/HTML5）、算法设计与分析、数据库系统（SQL）、机器学习等。全英文教学。通过一年努力以高绩点成功转至创新工程学院。">
+                    Core courses: Web Technologies, Algorithm Design, Database Systems, Machine Learning. All taught in English. Transferred from Tourism Management with high GPA.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="card-tag" data-en="Summer Camp" data-zh="夏令营">Summer Camp</div>
+                <h3 data-en="Renmin University — AI Entrepreneurship" data-zh="中国人民大学 — AI创业夏令营">Renmin University — AI Entrepreneurship</h3>
+                <p class="card-date">2024 | Beijing</p>
+                <p data-en="Completed Renmin University's intensive 'AI Entrepreneurship & Application' summer program. Achieved A+ grade (Top 5%). Focused on large language models, prompt engineering, and AI product design."
+                   data-zh="完成中国人民大学'AI创业与落地'高强度夏令营课程，获A+（Top 5%）评级。聚焦大语言模型、Prompt Engineering及AI产品设计。">
+                    Completed Renmin University's intensive AI Entrepreneurship summer program. Achieved A+ (Top 5%). Focused on LLMs and AI product design.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="card-tag" data-en="Research" data-zh="科研">Research</div>
+                <h3 data-en="Embodied Intelligence Research Group" data-zh="具身智能科研组">Embodied Intelligence Research Group</h3>
+                <p class="card-date">2025.09 – Present | M.U.S.T.</p>
+                <p data-en="Building multimodal data pipelines for embodied intelligence. Responsible for visual/motion data collection, cleaning & format alignment. Proficient with PyTorch DataLoader. Participated in Transformer-based model benchmarking & loss curve analysis."
+                   data-zh="参与具身智能课题组多模态数据管线建设，负责视觉/运动数据的采集、清洗与格式对齐；熟练运用PyTorch DataLoader；参与Transformer-based模型的基准测试与Loss曲线分析。">
+                    Building multimodal data pipelines for embodied intelligence. PyTorch DataLoader. Transformer-based model benchmarking.
+                </p>
+            </div>
+        </div>
+
+        <!-- 社会实践 -->
+        <h3 class="subsection-title" data-en="Social Practice" data-zh="社会实践">Social Practice</h3>
+        <div class="card-grid">
+            <div class="card-nb">
+                <div class="card-tag" data-en="Competition" data-zh="竞赛">Competition</div>
+                <h3 data-en="Huawei ICT Competition — 1st Prize" data-zh="华为ICT大赛 — 一等奖">Huawei ICT Competition — 1st Prize</h3>
+                <p class="card-date">2024.12 | Macau Region</p>
+                <p data-en="Mastered Huawei cloud computing, big data, and AI core technology systems through three rounds of selection. Developed engineering thinking to apply ICT architecture to smart cities and industrial inspection scenarios."
+                   data-zh="历经三轮选拔，深度掌握华为云计算、大数据、AI核心技术体系；具备将ICT底层架构能力迁移应用于智慧城市、工业巡检等复杂业务场景的工程思维。">
+                    Three rounds of selection. Mastered Huawei cloud computing, big data & AI. Applied ICT architecture to smart cities & industrial inspection.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="card-tag" data-en="Project" data-zh="项目">Project</div>
+                <h3 data-en="Azure Canvas — Full-Stack Campus Website" data-zh="Azure Canvas — 集成式校园全功能网站">Azure Canvas — Full-Stack Campus Website</h3>
+                <p class="card-date">2025 | Lead Developer</p>
+                <p data-en="Led full-stack architecture: Vue ecosystem for component-based frontend with Three.js WebGL 3D scenes; route lazy-loading and CDN acceleration for first-screen performance. Backend: Nginx reverse proxy + RESTful API HTTP layer ensuring high-concurrency rendering efficiency."
+                   data-zh="主导校园网站全栈架构：前端基于Vue全家桶实现组件化开发，集成Three.js引擎构建WebGL 3D场景，通过路由懒加载与CDN加速优化首屏性能；后端采用Nginx反向代理与RESTful API设计HTTP通信层，保障高并发下的渲染效率。">
+                    Led full-stack architecture: Vue + Three.js WebGL 3D frontend; Nginx reverse proxy + RESTful API backend for high-concurrency rendering.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="card-tag" data-en="Leadership" data-zh="领导力">Leadership</div>
+                <h3 data-en="Student Union — Community Relations" data-zh="学生会 — 社区关系部">Student Union — Community Relations</h3>
+                <p class="card-date">M.U.S.T.</p>
+                <p data-en="Vice Minister of Community Relations at M.U.S.T. Student Union. Organized campus FinTech forums with 200+ attendees. Led roundtable discussions on large model applications in risk control."
+                   data-zh="澳门科技大学学生会社区关系部副部长。策划校级金融科技论坛，参会规模200+人。组织大模型在风控领域应用的专题圆桌讨论。">
+                    Vice Minister at M.U.S.T. Student Union. Organized FinTech forums with 200+ attendees. Built campus tech community.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== HOBBIES PAGE ==================== -->
+<section class="page-section" id="page-hobbies">
+    <div class="section-nb">
+        <h2 class="section-nb__title" data-en="Hobbies & Passions" data-zh="兴趣爱好">Hobbies & Passions</h2>
+        <div class="section-nb__divider"></div>
+
+        <!-- 我的歌单 -->
+        <h3 class="subsection-title" id="playlist-section" data-en="My Playlist" data-zh="我的歌单">My Playlist</h3>
+        <div class="qqmusic-player">
+            <div class="qqmusic-disc-wrap">
+                <div class="qqmusic-disc" id="qqDisc"></div>
+                <div class="qqmusic-disc-info">
+                    <div class="qqmusic-title" id="qqTitle">Live My Life</div>
+                    <div class="qqmusic-artist" id="qqArtist">aespa</div>
+                    <div class="qqmusic-btns">
+                        <button class="btn-nb" id="qqPrevBtn" aria-label="Previous track">⏮</button>
+                        <button class="btn-nb" id="qqPlayPauseBtn" aria-label="Play/Pause">▶</button>
+                        <button class="btn-nb" id="qqNextBtn" aria-label="Next track">⏭</button>
+                        <button class="btn-nb" id="playlistRefreshBtn" data-en="🔀 Shuffle" data-zh="🔀 随机">🔀 Shuffle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="qqmusic-tracklist" id="hobbyPlaylistGrid"></div>
+        </div>
+
+        <!-- 体育运动 -->
+        <h3 class="subsection-title" data-en="Sports" data-zh="体育运动">Sports</h3>
+        <div class="card-grid">
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">🧘</div>
+                <div class="card-tag" data-en="Fitness" data-zh="健身">Fitness</div>
+                <h3 data-en="Pilates" data-zh="普拉提">Pilates</h3>
+                <p data-en="Core strength, flexibility, and body awareness. Pilates keeps me balanced and injury-free through intense training seasons."
+                   data-zh="核心力量、柔韧性与身体感知。普拉提让我在高强度训练季保持平衡、远离伤病。">
+                    Core strength, flexibility, and body awareness. Keeps me balanced through intense training seasons.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">🏃</div>
+                <div class="card-tag" data-en="Athletics" data-zh="田径">Athletics</div>
+                <h3 data-en="Track & Field" data-zh="田径">Track & Field</h3>
+                <p data-en="Speed, endurance, and explosive power. Track training forms the physical foundation for orienteering competition."
+                   data-zh="速度、耐力与爆发力。田径训练是定向越野竞技的体能基础。">
+                    Speed, endurance, and explosive power. The physical foundation for orienteering competition.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">🏸</div>
+                <div class="card-tag" data-en="Racket Sport" data-zh="球拍运动">Racket Sport</div>
+                <h3 data-en="Badminton" data-zh="羽毛球">Badminton</h3>
+                <p data-en="Quick reflexes, agility, and strategic play. Badminton sharpens reaction time and court awareness."
+                   data-zh="快速反应、敏捷性与战略打法。羽毛球磨练反应速度与场地意识。">
+                    Quick reflexes, agility, and strategic play. Sharpens reaction time and spatial awareness.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">🏀</div>
+                <div class="card-tag" data-en="Team Sport" data-zh="团队运动">Team Sport</div>
+                <h3 data-en="Basketball" data-zh="篮球">Basketball</h3>
+                <p data-en="Teamwork, communication, and fast decision-making under pressure. Basketball builds the team spirit I bring to every project."
+                   data-zh="团队协作、沟通与压力下的快速决策。篮球培养了我在每个项目中都带入的团队精神。">
+                    Teamwork, communication, and fast decision-making. Builds the team spirit I bring to every project.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">⚽</div>
+                <div class="card-tag" data-en="Team Sport" data-zh="团队运动">Team Sport</div>
+                <h3 data-en="Football" data-zh="足球">Football</h3>
+                <p data-en="Endurance, coordination, and tactical thinking. Football teaches me to read the field and adapt strategies on the fly."
+                   data-zh="耐力、协调性与战术思维。足球教会我读懂场上局势，随机应变。">
+                    Endurance, coordination, and tactical thinking. Reading the field and adapting strategies on the fly.
+                </p>
+            </div>
+        </div>
+
+        <!-- 表演艺术 -->
+        <h3 class="subsection-title" data-en="Performing Arts" data-zh="表演艺术">Performing Arts</h3>
+        <div class="card-grid">
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">🎹</div>
+                <div class="card-tag" data-en="Music" data-zh="音乐">Music</div>
+                <h3 data-en="Piano" data-zh="钢琴">Piano</h3>
+                <p data-en="Classical and contemporary pieces. Piano trains patience, precision, and the ability to express emotion through structure — skills that translate directly to writing elegant code."
+                   data-zh="古典与现代曲目。钢琴训练耐心、精准度以及通过结构表达情感的能力——这些技能直接迁移到编写优雅代码上。">
+                    Classical and contemporary pieces. Trains patience, precision, and emotional expression through structure.
+                </p>
+            </div>
+            <div class="card-nb">
+                <div class="hobby-card-img-placeholder">💃</div>
+                <div class="card-tag" data-en="Dance" data-zh="舞蹈">Dance</div>
+                <h3 data-en="Dance" data-zh="舞蹈">Dance</h3>
+                <p data-en="From contemporary to Chinese classical dance. Dance is my way of telling stories without words — movement, rhythm, and presence on stage."
+                   data-zh="从现代舞到中国古典舞。舞蹈是我无需言语讲述故事的方式——动作、节奏与舞台上的存在感。">
+                    Contemporary and Chinese classical dance. Telling stories through movement, rhythm, and stage presence.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TRAVEL PAGE ==================== -->
+<section class="page-section page-travel" id="page-travel">
+    <div class="travel-hero">
+        <video class="travel-video-bg" id="travelVideoBg" muted loop playsinline>
+            <source src="videos/东北.mp4" type="video/mp4">
+        </video>
+        <div class="travel-video-overlay"></div>
+        <div class="floating-imgs">
+            <div class="floating-img"><img src="images/photo12.jpg" alt="Chongqing"></div>
+            <div class="floating-img"><img src="images/photo4.jpg" alt="Quanzhou"></div>
+            <div class="floating-img">🏔️</div>
+            <div class="floating-img">🌊</div>
+            <div class="floating-img">❄️</div>
+            <div class="floating-img">🌴</div>
+            <div class="floating-img">🏙️</div>
+            <div class="floating-img">🌄</div>
+        </div>
+        <h1 class="travel-title" data-en="Every city adds a new coordinate to my map." data-zh="每座城市，都是我内心地图上的新坐标。">Every city adds a new coordinate to my map.</h1>
+        <p class="travel-subtitle"
+            data-en="Exploring landscapes, cultures, and the spaces in between — from the frozen north to tropical coasts."
+            data-zh="探索风景、文化和其中的空间——从冰封的北方到热带海岸。">
+            Exploring landscapes, cultures, and the spaces in between — from the frozen north to tropical coasts.
+        </p>
+        <!-- Custom video controls -->
+        <div class="video-controls" id="travelVideoControls">
+            <button class="vc-btn" id="travelPlayBtn" aria-label="Play/Pause">⏸</button>
+            <div class="vc-progress-wrap">
+                <input type="range" class="vc-progress" id="travelProgress" min="0" max="100" value="0" step="0.1">
+            </div>
+            <button class="vc-btn" id="travelMuteBtn" aria-label="Mute">🔇</button>
+            <button class="vc-btn" id="travelFullscreenBtn" aria-label="Fullscreen">⛶</button>
+        </div>
+        <div class="travel-scroll-indicator">
+            <span data-en="Scroll to Explore" data-zh="滚动探索">Scroll to Explore</span>
+            <div class="arrow-down"></div>
+        </div>
+    </div>
+
+    <!-- 2026 -->
+    <div class="travel-section">
+        <div class="travel-year-header">
+            <span class="year-badge">2026</span>
+            <span data-en="Adventures in 2026" data-zh="2026年的旅途">Adventures in 2026</span>
+        </div>
+        <div class="travel-year-divider"></div>
+        <div class="card-grid">
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌿</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Liuzhou, Guangxi" data-zh="柳州，广西">Liuzhou, Guangxi</div>
+                    <p class="travel-card__desc" data-en="Home of the legendary snail noodles. Karst landscapes and the most pungent luosifen I've ever had." data-zh="传奇螺蛳粉的故乡。喀斯特地貌和我吃过的最香臭的一碗螺蛳粉。">Home of the legendary snail noodles. Karst landscapes and the most pungent luosifen I've ever had.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img class="travel-card__img" src="images/photo12.jpg" alt="Chongqing night view">
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Chongqing" data-zh="重庆">Chongqing</div>
+                    <p class="travel-card__desc" data-en="The mountain city that never sleeps. Hongyadong lit up at night, spicy hotpot, and a skyline unlike anywhere else." data-zh="永不眠的山城。夜晚灯火通明的洪崖洞、麻辣火锅，以及中国独一无二的天际线。">The mountain city that never sleeps. Hongyadong lit up at night and spicy hotpot.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌸</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Jiangmen, Guangdong" data-zh="江门，广东">Jiangmen, Guangdong</div>
+                    <p class="travel-card__desc" data-en="The hometown of overseas Chinese. Kaiping Diaolou watchtowers and a slow riverside afternoon." data-zh="华侨之乡。开平碉楼和悠闲的江边午后时光。">The hometown of overseas Chinese. Kaiping Diaolou watchtowers and a slow riverside afternoon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="travel-section">
+        <div class="travel-year-header">
+            <span class="year-badge">2025</span>
+            <span data-en="Adventures in 2025" data-zh="2025年的旅途">Adventures in 2025</span>
+        </div>
+        <div class="travel-year-divider"></div>
+        <div class="card-grid">
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌊</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Xiamen, Fujian" data-zh="厦门，福建">Xiamen, Fujian</div>
+                    <p class="travel-card__desc" data-en="Sea breeze, colonial architecture, and the best oyster omelettes. Gulangyu Island stole my heart." data-zh="海风、殖民地建筑和最好吃的蚵仔煎。鼓浪屿让我心动。">Sea breeze, colonial architecture, and the best oyster omelettes.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img class="travel-card__img" src="images/photo4.jpg" alt="Quanzhou traditional costume">
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Quanzhou, Fujian" data-zh="泉州，福建">Quanzhou, Fujian</div>
+                    <p class="travel-card__desc" data-en="The starting point of the Maritime Silk Road. Ancient temples, Minnan culture, and a stunning traditional costume shoot." data-zh="海上丝绸之路的起点。古老寺庙、闽南文化，还有一次惊艳的汉服拍摄。">The starting point of the Maritime Silk Road. Ancient temples and a stunning traditional costume shoot.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🏙️</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Changzhou, Jiangsu" data-zh="常州，江苏">Changzhou, Jiangsu</div>
+                    <p class="travel-card__desc" data-en="Dinosaur Park, ancient canal towns, and the perfect blend of old and new Jiangnan." data-zh="恐龙园、古运河小镇，以及江南新旧完美融合的城市风貌。">Dinosaur Park, ancient canal towns, and the perfect blend of old and new Jiangnan.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">⛵</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Ningbo, Zhejiang" data-zh="宁波，浙江">Ningbo, Zhejiang</div>
+                    <p class="travel-card__desc" data-en="Tianyi Pavilion, the oldest private library in China, and fresh seafood by the harbor." data-zh="中国现存最古老的私家藏书楼天一阁，以及港边的新鲜海鲜。">Tianyi Pavilion, the oldest private library in China, and fresh seafood by the harbor.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🏖️</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Beihai, Guangxi" data-zh="北海，广西">Beihai, Guangxi</div>
+                    <p class="travel-card__desc" data-en="Silver Beach, tropical vibes, and the nostalgic old street. Guangxi's coastal gem." data-zh="银滩、热带风情和怀旧老街。广西的海滨明珠。">Silver Beach, tropical vibes, and the nostalgic old street. Guangxi's coastal gem.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🏔️</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Lugu Lake, Yunnan" data-zh="泸沽湖，云南">Lugu Lake, Yunnan</div>
+                    <p class="travel-card__desc" data-en="The 'Pearl of the Plateau' — crystal-clear waters, Mosuo culture, and a sky full of stars at 2,690m altitude." data-zh="高原明珠——清澈的湖水、摩梭文化，以及海拔2690米的满天繁星。">The 'Pearl of the Plateau' — crystal-clear waters, Mosuo culture, and a sky full of stars.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img class="travel-card__img" src="images/photo16.jpg" alt="Shangri-La">
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Shangri-La, Yunnan" data-zh="香格里拉，云南">Shangri-La, Yunnan</div>
+                    <p class="travel-card__desc" data-en="The mythical paradise. Tibetan monasteries, golden meadows, and the Blue Moon Valley at the foot of Meili Snow Mountain." data-zh="传说中的世外桃源。藏传佛教寺院、金色草甸，以及梅里雪山脚下的蓝月谷。">The mythical paradise. Tibetan monasteries, golden meadows, and the Blue Moon Valley.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌊</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Yichang, Hubei" data-zh="宜昌，湖北">Yichang, Hubei</div>
+                    <p class="travel-card__desc" data-en="Gateway to the Three Gorges. The mighty Yangtze, the Three Gorges Dam, and the dramatic cliffs of Xiling Gorge." data-zh="三峡门户。奔腾的长江、三峡大坝，以及西陵峡壮观的峭壁。">Gateway to the Three Gorges. The mighty Yangtze and the dramatic cliffs of Xiling Gorge.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">⛷️</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Zhangjiakou, Hebei" data-zh="张家口，河北">Zhangjiakou, Hebei</div>
+                    <p class="travel-card__desc" data-en="2022 Winter Olympics host city. World-class ski slopes, vast grasslands, and the ancient Great Wall winding through the mountains." data-zh="2022年冬奥会举办城市。世界级滑雪场、广袤草原，以及蜿蜒山间的古长城。">2022 Winter Olympics host city. World-class ski slopes and the ancient Great Wall.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="travel-section">
+        <div class="travel-year-header">
+            <span class="year-badge">2024</span>
+            <span data-en="Adventures in 2024" data-zh="2024年的旅途">Adventures in 2024</span>
+        </div>
+        <div class="travel-year-divider"></div>
+        <div class="card-grid">
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">❄️</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Harbin, Heilongjiang" data-zh="哈尔滨，黑龙江">Harbin, Heilongjiang</div>
+                    <p class="travel-card__desc" data-en="The 'Ice City' of China. The world-famous Ice and Snow Festival, Russian-style architecture, and -20°C adventures." data-zh="中国的'冰城'。举世闻名的冰雪节、俄式建筑，以及零下20度的冒险。">The 'Ice City'. The world-famous Ice and Snow Festival and Russian-style architecture.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌌</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Mohe, Heilongjiang" data-zh="漠河，黑龙江">Mohe, Heilongjiang</div>
+                    <p class="travel-card__desc" data-en="China's northernmost city. Chasing the Northern Lights, the Midnight Sun, and standing at the top of the country." data-zh="中国最北端的城市。追逐极光、极昼，站在祖国的最北端。">China's northernmost city. Chasing the Northern Lights and standing at the top of the country.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌊</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Qingdao, Shandong" data-zh="青岛，山东">Qingdao, Shandong</div>
+                    <p class="travel-card__desc" data-en="Red roofs, blue sea, and golden beaches. German colonial architecture, fresh seafood, and the best beer in China." data-zh="红瓦、碧海、金沙滩。德式殖民建筑、新鲜海鲜，以及中国最好的啤酒。">Red roofs, blue sea, and golden beaches. German architecture and the best beer in China.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🏛️</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Beijing" data-zh="北京">Beijing</div>
+                    <p class="travel-card__desc" data-en="The ancient capital. The Forbidden City, the Great Wall, and the hutongs — five thousand years of history in one city." data-zh="古都。故宫、长城和胡同——一座城市里五千年的历史。">The ancient capital. The Forbidden City, the Great Wall, and the hutongs.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌴</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Malaysia" data-zh="马来西亚">Malaysia</div>
+                    <p class="travel-card__desc" data-en="Kuala Lumpur's Petronas Towers, Penang's street art, and the rainforest. My first international adventure — a melting pot of cultures." data-zh="吉隆坡双子塔、槟城街头艺术和热带雨林。我的第一次国际旅行——文化的大熔炉。">Petronas Towers, Penang's street art, and the rainforest. My first international adventure.</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-card__img-placeholder">🌸</div>
+                <div class="travel-card__body">
+                    <div class="travel-card__city" data-en="Wuhan, Hubei" data-zh="武汉，湖北">Wuhan, Hubei</div>
+                    <p class="travel-card__desc" data-en="The city of rivers and cherry blossoms. Hot dry noodles for breakfast, the Yellow Crane Tower at sunset, and the energy of a city that never gives up." data-zh="江城与樱花之城。早餐热干面、黄鹤楼日落，以及这座永不服输的城市的活力。">The city of rivers and cherry blossoms. Hot dry noodles and the Yellow Crane Tower at sunset.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FAMILY PAGE ==================== -->
+<section class="page-section page-family" id="page-family">
+    <div class="family-hero">
+        <div class="family-badge" data-en="FAMILY &amp; FRIENDS · HOME" data-zh="家人挚友 · 港湾">FAMILY &amp; FRIENDS · HOME</div>
+        <h1 data-en="The people who make every finish line worth crossing." data-zh="让每一条终点线都值得冲过去的人。">The people who make every finish line worth crossing.</h1>
+        <p class="family-subtitle"
+            data-en="Behind every line of code and every race, there's family and friends cheering me on."
+            data-zh="在每一行代码和每一场比赛背后，都有家人和挚友在为我加油。">
+            Behind every line of code and every race, there's family and friends cheering me on.
+        </p>
+        <a href="#" class="btn-family" data-page="contact" data-en="SAY HELLO" data-zh="打个招呼">SAY HELLO</a>
+        <div class="family-scroll">
+            <span data-en="Scroll to Explore" data-zh="滚动探索">Scroll to Explore</span>
+            <div class="arrow-down" style="border-color:#A8D8B8;"></div>
+        </div>
+    </div>
+
+    <div class="family-quote-band">
+        <span data-en=""Home is not a place — it's the people who make you feel like yourself."" data-zh=""家不是一个地方——而是让你做自己的那些人。"">"Home is not a place — it's the people who make you feel like yourself."</span>
+    </div>
+
+    <div class="family-section">
+        <h2 data-en="Family Photo" data-zh="全家福">Family Photo</h2>
+        <div class="family-photo-cluster">
+            <div class="family-cluster-side family-cluster-side--left">
+                <div class="family-cluster-img" style="--r:-4deg"><img src="images/family1.jpg" alt="Family 1"></div>
+                <div class="family-cluster-img" style="--r:3deg"><img src="images/family2.jpg" alt="Family 2"></div>
+            </div>
+            <div class="family-photo-frame">
+                <img src="images/photo5.jpg" alt="Family photo">
+            </div>
+            <div class="family-cluster-side family-cluster-side--right">
+                <div class="family-cluster-img" style="--r:-3deg"><img src="images/family3.jpg" alt="Family 3"></div>
+            </div>
+        </div>
+
+        <h2 style="margin-top:40px;" data-en="Family Members" data-zh="家庭成员">Family Members</h2>
+        <div class="card-grid">
+            <div class="family-card">
+                <h3 data-en="👨 Dad" data-zh="👨 爸爸">👨 Dad</h3>
+                <p data-en="My strongest supporter and the one who taught me that hard work always pays off. His calm and steady presence is my anchor." data-zh="我最坚强的后盾，教会我努力终有回报的人。他沉稳的存在是我的锚。">My strongest supporter and the one who taught me that hard work always pays off.</p>
+            </div>
+            <div class="family-card">
+                <h3 data-en="👩 Mom" data-zh="👩 妈妈">👩 Mom</h3>
+                <p data-en="Warm, caring, and endlessly encouraging. Mom is the one who sends care packages and video calls during late-night study sessions." data-zh="温暖、体贴、永远鼓励我。妈妈是那个在深夜学习时寄来爱心包裹、打来视频电话的人。">Warm, caring, and endlessly encouraging. The one who sends care packages during late-night study sessions.</p>
+            </div>
+            <div class="family-card">
+                <h3 data-en="👦 Little Brother" data-zh="👦 弟弟">👦 Little Brother</h3>
+                <p data-en="My little partner in crime. Full of energy, curiosity, and the kind of joy that reminds me why the simple things matter most." data-zh="我的小搭档。充满活力与好奇心，那种快乐时刻提醒我简单的事情才是最重要的。">My little partner in crime. Full of energy and curiosity that reminds me why simple things matter most.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top:56px;" data-en="Friends" data-zh="好友合照">Friends</h2>
+        <div class="friends-scene">
+            <div class="friends-video-wrap">
+                <video id="friendVideo" src="videos/friend1.mp4" loop playsinline muted></video>
+                <div class="video-controls friend-video-controls" id="friendVideoControls">
+                    <button class="vc-btn" id="friendPlayBtn" aria-label="Play/Pause">▶</button>
+                    <div class="vc-progress-wrap">
+                        <input type="range" class="vc-progress" id="friendProgress" min="0" max="100" value="0" step="0.1">
+                    </div>
+                    <button class="vc-btn" id="friendMuteBtn" aria-label="Mute">🔇</button>
+                    <button class="vc-btn" id="friendFullscreenBtn" aria-label="Fullscreen">⛶</button>
+                </div>
+            </div>
+            <div class="scatter-photo" style="--r:-8deg; --x:-420px; --y:-190px"><img src="images/friend1.jpg" alt="Friends 1"></div>
+            <div class="scatter-photo" style="--r:6deg;  --x:400px;  --y:-180px"><img src="images/friend2.jpg" alt="Friends 2"></div>
+            <div class="scatter-photo" style="--r:-5deg; --x:-440px; --y:50px"><img src="images/friend3.jpg" alt="Friends 3"></div>
+            <div class="scatter-photo" style="--r:9deg;  --x:420px;  --y:70px"><img src="images/friend4.jpg" alt="Friends 4"></div>
+            <div class="scatter-photo" style="--r:-7deg; --x:-400px; --y:280px"><img src="images/friend5.jpg" alt="Friends 5"></div>
+            <div class="scatter-photo scatter-photo--portrait" style="--r:5deg;  --x:380px;  --y:290px"><img src="images/friend10.jpg" alt="Friend 10"></div>
+            <div class="scatter-photo scatter-photo--portrait" style="--r:-4deg; --x:0px;    --y:-310px"><img src="images/friend11.jpg" alt="Friend 11"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<section class="page-section" id="page-contact">
+    <div class="section-nb">
+        <h2 class="section-nb__title" data-en="Get In Touch" data-zh="与我联系">Get In Touch</h2>
+        <div class="section-nb__divider"></div>
+        <p style="margin-bottom:24px;font-weight:500;"
+            data-en="I'd love to hear from you — whether it's about tech collaboration, orienteering, or just saying hi!"
+            data-zh="我很乐意收到你的消息——无论是关于技术合作、定向越野，还是只是打个招呼！">
+            I'd love to hear from you — whether it's about tech collaboration, orienteering, or just saying hi!
+        </p>
+        <div class="contact-info-row">
+            <div class="contact-info-item">📧 a1632180142@outlook.com</div>
+            <div class="contact-info-item">📱 18288764250</div>
+            <div class="contact-info-item">💬 WeChat: a1632180142</div>
+        </div>
+        <form class="contact-form" style="margin-top:24px;" onsubmit="event.preventDefault(); alert('Demo form — connect to a backend service in production.');">
+            <input type="text" placeholder="Your Name" data-en-placeholder="Your Name" data-zh-placeholder="你的名字" required>
+            <input type="email" placeholder="Your Email" data-en-placeholder="Your Email" data-zh-placeholder="你的邮箱" required>
+            <textarea rows="5" placeholder="Your Message" data-en-placeholder="Your Message" data-zh-placeholder="你的留言" required></textarea>
+            <button type="submit" data-en="SEND MESSAGE" data-zh="发送消息">SEND MESSAGE</button>
+        </form>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer-nb" id="siteFooter">
+    <div>
+        <h4>Wu Yuchen</h4>
+        <p style="opacity:0.7;">Software Engineer & Orienteer</p>
+        <p style="opacity:0.5;font-size:0.75rem;">M.U.S.T. · Macau</p>
+    </div>
+    <div>
+        <h4 data-en="Quick Links" data-zh="快速链接">Quick Links</h4>
+        <a href="#" data-page="education" data-en="Education" data-zh="教育学习">Education</a>
+        <a href="#" data-page="hobbies" data-en="Hobbies" data-zh="兴趣爱好">Hobbies</a>
+        <a href="#" data-page="travel" data-en="Travel" data-zh="旅行生活">Travel</a>
+        <a href="#" data-page="family" data-en="Family & Friends" data-zh="家人挚友">Family & Friends</a>
+        <a href="#" data-page="contact" data-en="Contact" data-zh="与我联系">Contact</a>
+    </div>
+    <div>
+        <h4 data-en="Connect" data-zh="联系">Connect</h4>
+        <a href="mailto:a1632180142@outlook.com">Email</a>
+        <a href="#">WeChat: a1632180142</a>
+        <a href="#">GitHub</a>
+    </div>
+</footer>
+<div class="footer-bottom">
+    <span data-en="© 2026 Wu Yuchen. Built with Neo-Brutalism." data-zh="© 2026 吴宇晨. 采用Neo-Brutalism风格构建。">© 2026 Wu Yuchen. Built with Neo-Brutalism.</span>
+</div>
+
+<!-- ==================== LIKE HEART ==================== -->
+<button class="like-heart" id="likeHeart" aria-label="Like">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    </svg>
+    <span class="like-count" id="likeCount">0</span>
+</button>
+
+<!-- ==================== CD MUSIC PLAYER ==================== -->
+<div class="cd-player" id="cdPlayer">
+    <div class="cd-hover-popup" id="cdHoverPopup">
+        <div class="cd-popup-header" data-en="Quick Pick" data-zh="随机推荐">Quick Pick</div>
+        <div id="cdPopupTracks"></div>
+    </div>
+    <div class="cd-now-playing-label" id="cdNowPlaying">aespa - Live My Life</div>
+    <div class="cd-disc-wrap" id="cdDiscWrap" title="Go to My Playlist">
+        <div class="cd-disc" id="cdDisc"></div>
+        <button class="cd-play-btn" id="cdPlayPauseBtn" aria-label="Play/Pause">
+            <span id="cdPlayIcon">▶</span>
+        </button>
+    </div>
+</div>
+
+<audio id="bgAudio" preload="none"></audio>
+
+<script src="js/main.js"></script>
+</body>
+</html>
